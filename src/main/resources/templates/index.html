@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+</head>
+<body>
+	<p>Enter data below</p>
+	<form action="/create" method="post">
+		<p>Full name: <input type="text" th:fiels="${}"/></p>
+		<p>Age: <input type="text" th:fiels="${}"/></p>
+		<p>Employed?: <input type="checkbox" th:fiels="${}" th:value="true"/></p>
+	</form>
+</body>
+</html>
